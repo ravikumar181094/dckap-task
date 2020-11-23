@@ -14,11 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::middleware('auth:api')->get('/user', function (Request $request) {
-//     return $request->user();
-// });
+Route::post('login', 'Api\AuthController@login');
 
-Route::group(['prefix' => 'cars' ], function () {
+Route::group(['prefix' => 'cars', 'middleware' => 'auth:api' ], function () {
     Route::post('/save', 'Api\CarsController@save');
     Route::post('/search', 'Api\CarsController@search');
 });

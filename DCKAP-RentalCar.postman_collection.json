@@ -1,0 +1,93 @@
+{
+	"variables": [],
+	"info": {
+		"name": "DCKAP - TEST JOB",
+		"_postman_id": "6483d24d-0883-986e-6b36-fd45ea570460",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Save Cars",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/cars/save",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMjYwYmNhZmVmZTkxNzQzNTEzMTA1NjI4N2E3Y2Y2Y2VmZmI5ZTNhNGQ3ZDNmMWVjMzBmYWZhMTczY2ZkZmE5ZjhlNzcyYjlkYzUzNTM4MjciLCJpYXQiOjE2MDYxNjI3MDYsIm5iZiI6MTYwNjE2MjcwNiwiZXhwIjoxNjM3Njk4NzA2LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.GNOvEtOop39EJ4yoFFMnpPO7s-uPAaXVGi0nOMwDS42imAt3fXrYbhuTWMowxMP25X4vbVZaB57gIdWCHQuXjDmnf5jA0s9j-qsCmN8HUMAEA7F5yenj_9E8bcdloF9XpPHwXQI_fWnWGq5zhSNQiIJgpEWTpN_e9ybGJUilDG-0iEL_9U0E2fyepmuLzroI5C0iV5QOZsxA8nxp5qnD--JfVCRb00XMOoWieOR_xMc06r1mMfNwMjUpRPd_9lljNiWcHoUco86emYKjsfnY6DuHnpgq2MSq8wsFtdbnWwHhfXU4uFCEg-tB8t_AqKW0oa38m_bkaCRIZYSeGhR0Mb1vzyCajgnK2cNVex46CxoOGys_plSsije-gllaQGunuhRbsw-f_ycgFIfyz8JXgExiMI7_DtazaCPmk57_1QoxTjsP7aI2cztcEb5xzv--Fw-zBPHolQ86Lu5F-Gg-roUyPnjSA1OJV3koL4WdQMTf8-B1_E8kRCdUHv5ft4k4tkPR9gIDb7Qj-CPY7ruQBJJlu4qyb4u2aXnrMavQd0Y7hkyKmlxNzBJ6IirXmvL2plbpJN5PMp_H5CTLqajBarBrQwv4wpqoGcInOb1sy-m9_74F9ir3rhJeusmqxK1BY_8S7VFYQOgEIv0UhGdmvVpZlrlC0XsYR-Y0-eyGJQc",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Search Car",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/cars/search",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMjYwYmNhZmVmZTkxNzQzNTEzMTA1NjI4N2E3Y2Y2Y2VmZmI5ZTNhNGQ3ZDNmMWVjMzBmYWZhMTczY2ZkZmE5ZjhlNzcyYjlkYzUzNTM4MjciLCJpYXQiOjE2MDYxNjI3MDYsIm5iZiI6MTYwNjE2MjcwNiwiZXhwIjoxNjM3Njk4NzA2LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.GNOvEtOop39EJ4yoFFMnpPO7s-uPAaXVGi0nOMwDS42imAt3fXrYbhuTWMowxMP25X4vbVZaB57gIdWCHQuXjDmnf5jA0s9j-qsCmN8HUMAEA7F5yenj_9E8bcdloF9XpPHwXQI_fWnWGq5zhSNQiIJgpEWTpN_e9ybGJUilDG-0iEL_9U0E2fyepmuLzroI5C0iV5QOZsxA8nxp5qnD--JfVCRb00XMOoWieOR_xMc06r1mMfNwMjUpRPd_9lljNiWcHoUco86emYKjsfnY6DuHnpgq2MSq8wsFtdbnWwHhfXU4uFCEg-tB8t_AqKW0oa38m_bkaCRIZYSeGhR0Mb1vzyCajgnK2cNVex46CxoOGys_plSsije-gllaQGunuhRbsw-f_ycgFIfyz8JXgExiMI7_DtazaCPmk57_1QoxTjsP7aI2cztcEb5xzv--Fw-zBPHolQ86Lu5F-Gg-roUyPnjSA1OJV3koL4WdQMTf8-B1_E8kRCdUHv5ft4k4tkPR9gIDb7Qj-CPY7ruQBJJlu4qyb4u2aXnrMavQd0Y7hkyKmlxNzBJ6IirXmvL2plbpJN5PMp_H5CTLqajBarBrQwv4wpqoGcInOb1sy-m9_74F9ir3rhJeusmqxK1BY_8S7VFYQOgEIv0UhGdmvVpZlrlC0XsYR-Y0-eyGJQc",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"company\" : \"xxxx\",\n\"vehicle_number\" : \"\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Login API",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"email\" : \"admin@gmail.com\",\n\"password\" : \"123456789\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
