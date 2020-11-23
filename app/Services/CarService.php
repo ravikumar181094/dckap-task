@@ -35,6 +35,20 @@ class CarService
         return true;
     }
 
+    public function searchCar($request)
+    {   
+        $query = Car::orderBy('id', 'desc');
+
+        if($request->company){
+            $query->where('company', 'like', '%'.$request->company_name.'%');
+        }
+        if($request->vehicle_number){
+            $query->where('vehicle_number', 'like', '%'.$request->vehicle_number.'%');
+        }
+        $data = $query->get();
+        return $data;
+    }
+
 
 
 
