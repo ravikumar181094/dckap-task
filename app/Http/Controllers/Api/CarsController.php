@@ -18,6 +18,6 @@ class CarsController extends ResponseController
     public function search(Request $request)
     {
         $data = CarService::searchCar($request);
-        return $this->sendResponse($data, 'Car Details Added Successfully', 200, 'send-data');
+        return $this->sendResponse($data, 'Car Details Listed Successfully', 200, 'send-data');
     }
 }
